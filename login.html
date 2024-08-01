@@ -1,0 +1,36 @@
+<html>
+<body>
+<form name=frm method=post action=user.php>
+<center>
+<p>Login to your account</p> 
+<table>
+<tr>
+<td>Userid</td>
+<td>
+<input type=text name=ui></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type=password name=ps></td>
+</tr>
+</table>
+<input type=submit name=sbm value=login>
+</center>
+</form>
+</body>
+</html>
+<?php
+$cn=mysql_connect("localhost","root");
+mysql_select_db("book",$cn);
+$sql="select count(*) from  where username='$_POST[ui]' and password='$_POST[ps]'";
+$result=mysql_query($sql,$cn);
+$row=mysql_fetch_array($result);
+if($row[0]>0)
+{
+session_start();
+$_SESSION['userid']=$_POST['ui'];
+header("location:http://localhost/book exchanger/bookdisplay1.php");
+}
+else
+echo "<font color=red>invalid username and or password</font>";
+?>

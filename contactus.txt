@@ -1,0 +1,24 @@
+<html>
+<body>
+<form name=frm method=post>
+<center>
+<table>
+<caption><b><h1>CONTACT US</h1></b></caption>
+
+<tr><td><b>College Name:</b>
+SSVP's B.S.D.college of engineering Deopur,Dhule</td></tr></br>
+
+ <tr><td><b>HOD Name:</b>
+Prof.B.R.Mandre,<b>EmailID:</b></td>
+
+
+
+<tr><td><b>Guide Name</b>
+Mr.V.R.Deshmukh</td>
+
+
+</table>
+</center>
+</form>
+</body>
+</html>
